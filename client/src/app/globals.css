@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.top-button {
+  position: absolute;
+  right: 360px;
+  bottom: 5px;
+  display: inline-block;
+}
+
+.top-button:active {
+  /*ボタンを押したとき*/
+  border: none;
+  -webkit-transform: translate(6px, 6px);
+  transform: translate(6px, 6px);
+}
+
+.btn-absolute:active:after,
+.btn-square-slant:active:before {
+  content: none; /*ボタンを押すと線が消える*/
+}
+
+.rensou {
+  position: absolute;
+  right: 170px;
+  bottom: 250px;
+  display: inline-block;
+}
+
+.rensou:active {
+  /*ボタンを押したとき*/
+  border: none;
+  -webkit-transform: translate(6px, 6px);
+  transform: translate(6px, 6px);
+}
+
+.rensou:active:after,
+.btn-square-slant:active:before {
+  content: none; /*ボタンを押すと線が消える*/
+}
+
+.aishou {
+  position: absolute;
+  right: 170px;
+  bottom: 50px;
+  display: inline-block;
+}
+
+.aishou:active {
+  /*ボタンを押したとき*/
+  border: none;
+  -webkit-transform: translate(6px, 6px);
+  transform: translate(6px, 6px);
+}
+
+.aishou:active:after,
+.btn-square-slant:active:before {
+  content: none; /*ボタンを押すと線が消える*/
+}
+
+.yes {
+  position: absolute;
+  right: 225px;
+  bottom: 400px;
+  display: inline-block;
+}
+
+.yes:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px); /*下に動く*/
+  border-bottom: none; /*線を消す*/
+}
+
+.yes1 {
+  position: absolute;
+  right: 450px;
+  bottom: 489px;
+  display: inline-block;
+}
+
+.yes1:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px); /*下に動く*/
+  border-bottom: none; /*線を消す*/
+}
+
+.yes2 {
+  position: absolute;
+  right: 200px;
+  bottom: 20px;
+  display: inline-block;
+}
+
+.yes2:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px); /*下に動く*/
+  border-bottom: none; /*線を消す*/
+}
+
+.yes3 {
+  position: absolute;
+  right: 225px;
+  bottom: 250px;
+  display: inline-block;
+}
+
+.yes3:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px); /*下に動く*/
+  border-bottom: none; /*線を消す*/
+}
